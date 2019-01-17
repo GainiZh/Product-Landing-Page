@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
+    <title>Product Landing Page</title>
 </head>
 <body>
     <header id="header">
         <img src="images/logo.jpg" id="header-img" alt="company logo">
-        <nav id="nav-bar">
+        <nav id="nav-bar" class="nav">
             <ul>
-                <li><a class="nav-link" href="#features">Features</a></p>
-                <li><a class="nav-link" href="#how-it-works">How it works</a></p>
-                <li><a class="nav-link" href="#blog">Blog</a></p>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#how-it-works">How it works</a></li>
+                <li><a class="nav-link" href="#blog">Blog</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="newsletter">
-        <h3>Sing up for our cool newsletter!</h3>
+        <h2>Sing up for our cool newsletter!</h2>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
             <input id="email" name="email" type="email" placeholder="Enter your e-mail" required/>
             <input id="submit" type="submit" value="Submit" class="button"/>
@@ -28,42 +28,39 @@
 
     </section>
     <div class="container">
-        <section id="features">
-            <div class="grid">
-                <h2>Premium Goods</h2>
+        <div class="info">
+            <section id="features">
+                <h2 class="title">Premium Goods</h2>
                 <p>Croissant fruitcake muffin icing pastry. Sweet roll carrot cake tiramisu icing muffin. Lollipop danish marzipan jelly
                 beans soufflé muffin gingerbread powder.</p>
-            </div>
-
-            <div class="grid">
-                <h2>Fast Shipping</h2>
+        
+                <h2 class="title">Fast Shipping</h2>
                 <p>Tootsie roll lemon drops soufflé danish. Marshmallow topping liquorice gummies lollipop brownie jelly beans. Lollipop
                 powder bear claw marzipan sesame snaps.</p>
-            </div>
-
-            <div class="grid">
-                <h2>Top Quality</h2>
+                   
+                <h2 class="title">Top Quality</h2>
                 <p>Macaroon tiramisu marshmallow jelly-o. Gingerbread powder tart powder candy canes gummi bears. Cake chocolate biscuit
                 biscuit. Ice cream cheesecake gingerbread biscuit chupa chups jujubes.</p>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <section id="how-it-works">
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/vAKtNV8KcWg" frameborder="0" allowfullscreen></iframe>
         </section>
 
         <section id="blog">
-            <h2>Latest Blog Articles</h2>
-            <article>
-                <h3>Our New Product</h3>
+            <h2 class="blog-title">Latest Blog Articles</h2>
+            <div class="row">
+            <article class="column">
+                <h3 class="article-title">Our New Product</h3>
                 <p>Danish chocolate cake cake gummi bears apple pie cotton candy. Soufflé chocolate pastry candy toffee. Apple pie dragée
                 sweet lemon drops liquorice pastry candy canes.
                 
                 Bonbon chocolate cake liquorice. Bear claw cake danish. Brownie jujubes oat cake cake jelly cake.</p>
             </article>
 
-            <article>
-                <h3>Our New Location</h3>
+            <article class="column">
+                <h3 class="article-title">Our New Location</h3>
                 <p>Soufflé sweet roll marzipan apple pie. Gummi bears chocolate jujubes chocolate cake. Dessert gummi bears carrot cake
                 powder bonbon dragée. Dessert croissant jujubes biscuit dragée jelly.
                 
@@ -71,14 +68,15 @@
                 chocolate cake pastry. Bonbon halvah sweet tootsie roll dessert lemon drops donut carrot cake.</p>
             </article>
 
-            <article>
-                <h3>Interview with our CEO</h3>
+            <article class="column">
+                <h3 class="article-title">Interview with our CEO</h3>
                 <p>Bear claw liquorice lollipop brownie sweet sugar plum. Candy canes lollipop bonbon gingerbread. Topping lollipop
                 marshmallow fruitcake pie sugar plum lemon drops bear claw croissant.
                 
                 Gingerbread sugar plum oat cake marshmallow tart. Soufflé lemon drops jelly soufflé wafer marzipan. Dessert marzipan
                 ice cream.</p>
             </article>
+            </div>
         </section>
     </div>
 
